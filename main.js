@@ -11,4 +11,8 @@ for(let i = 0; i < acc.length; i++) {
 			panel.style.display = 'block'
 		}
 	})
+	acc[i].addEventListener('blur', function() {
+		 let panel = acc[i].nextElementSibling;
+		 panel.style.display = 'none'
+	})
 }
